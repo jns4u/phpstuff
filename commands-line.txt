@@ -1,2 +1,3 @@
 grep -Po '^sudo.+:\K.*$' /etc/group
 sudo -i -u 'usr_nm'
+sudo deluser username sudo
