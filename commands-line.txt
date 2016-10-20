@@ -2,3 +2,4 @@ grep -Po '^sudo.+:\K.*$' /etc/group
 sudo -i -u 'usr_nm'
 sudo deluser username sudo
 chmod -R go+rw "dir"
+mkhomedir_helper username
