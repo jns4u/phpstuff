@@ -6,6 +6,7 @@ userdel userName
 userdel [options] userName
 userdel -r userName
 
+passwd [login]
 useradd usrnm
 chmod -R go+rw "dir"
 mkhomedir_helper username
