@@ -13,13 +13,14 @@ if(isset($_POST["submit"])){
 		$sql = mysql_query("INSERT INTO missing_recordings (phone) VALUES ('$phone')");
 	}
  
-if($sql){
-	echo "<br>Missing recordings has imported successfully.";
-}else{
-	echo "<br>There is some problem.";
-}
+	if($sql){
+		echo "<br>Missing recordings has imported successfully.";
+	}else{
+		echo "<br>There is some problem.";
+	}
 }
 ?>
+
 <form name="import" method="post" enctype="multipart/form-data" action="missing_import.php">
      <input type="file" name="file" /><br />
         <input type="submit" name="submit" value="Submit" />
