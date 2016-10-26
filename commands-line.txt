@@ -19,3 +19,6 @@ chmod -R go+rw "dir"
 mkhomedir_helper username
 
 find . -type f -size -1000k -exec rm {} +
+
+30 08 1-5 /home/yourfldr/yrscript
+
