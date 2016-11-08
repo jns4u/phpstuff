@@ -22,3 +22,7 @@ find . -type f -size -1000k -exec rm {} +
 
 30 08 1-5 /home/yourfldr/yrscript
 
+aws configure
+aws s3 mb s3://my-backup-bucket
+aws s3 cp file.txt s3://my-backup-bucket/
+
