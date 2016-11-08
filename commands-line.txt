@@ -27,3 +27,4 @@ aws s3 mb s3://my-backup-bucket
 aws s3 cp file.txt s3://my-backup-bucket/
 aws s3 cp s3://my-backup-bucket/my-backup.bak ./
 aws s3 rm s3://my-backup-bucket/my-backup.bak
+aws s3 ls s3://my-backup-bucket
