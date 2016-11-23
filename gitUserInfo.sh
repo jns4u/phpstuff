@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# pass gituser name in commandline to check git user details, for example jns4u
 if [ $# -ne 1 ]; then
  echo "Usage: $0 <username>"
  exit 1
