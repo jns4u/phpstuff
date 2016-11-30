@@ -29,3 +29,13 @@ aws s3 cp s3://my-backup-bucket/my-backup.bak ./
 aws s3 rm s3://my-backup-bucket/my-backup.bak
 aws s3 ls s3://my-backup-bucket
 aws s3 cp myfldr s3://my-backup-bucket/ --recursive
+
+Install Node version manager
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash
+
+NVM Usage:
+nvm ls
+nvm ls-remote
+nvm install v6.9.1
+nvm alias default v6.2.2
+
