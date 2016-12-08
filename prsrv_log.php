@@ -16,8 +16,7 @@ function preserve_log(value1,value2,value3){
 }
 
 // Some business logic in email templating
-function emailAdmin($some_var,$total,$recDate,$FileName){
-	// print_r(count($missing_files));die;
+function emailAdmin($some_var,$total,$recDate,$FileName){	
 	$fileatt_type = "text/csv";
 	$file_size = filesize($FileName);
 	$handle = fopen($FileName, "r");
@@ -28,7 +27,7 @@ function emailAdmin($some_var,$total,$recDate,$FileName){
 	$msg='Your Heading for '.$recDate."\r\n";
 	$msg.='<table border="0.9" style="width:350px;text-align:center;"><tr><th bgcolor="#00FF00">Heading First</th></tr><tr><td bgcolor="#E8E8E8">'.$total.'</td></tr></table><br>'."\r\n";	
 	$msg.='Heading Two:'."\r\n";
-	$msg.='<table border="0.9" style="width:500px;text-align:center;"><tr><th bgcolor="#00FF00">Active Leads Submitted</th><th bgcolor="#00FF00">Missing Recordings</th></tr><tr><td bgcolor="#E8E8E8">'.count($some_var).'</td><td bgcolor="#E8E8E8">'.count($some_var).'</td></tr></table><br>'."\r\n";		  
+	$msg.='<table border="0.9" style="width:500px;text-align:center;"><tr><th bgcolor="#00FF00">Heading First</th><th bgcolor="#00FF00">Some Header</th></tr><tr><td bgcolor="#E8E8E8">'.count($some_var).'</td><td bgcolor="#E8E8E8">'.count($some_var).'</td></tr></table><br>'."\r\n";		  
 	
 	$msg.='Heading 3:'."\r\n";
 	$SmVr = calltoSomeAPI_defMissing();
