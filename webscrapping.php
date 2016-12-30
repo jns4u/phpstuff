@@ -10,6 +10,26 @@ function utf8ize($dat) {
     }
     return $dat;
 }
+
+// json_encode for crunching large datasets
+if(mysql_num_rows($result)){
+    echo '{"Data":[';
+
+    $first = true;
+    $row=mysql_fetch_assoc($result);
+    while($row=mysql_fetch_row($result)){
+        if($first) {
+			$first = false;
+        }else {
+			echo ',';
+        }
+        echo json_encode($row,JSON_UNESCAPED_SLASHES);
+		// die;
+    }
+    echo ']}';
+} else {
+    echo '[]';
+}
  
 CURL to interchange Info between two Servers	
 */
