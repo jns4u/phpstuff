@@ -75,4 +75,17 @@ function emailAdmin($some_var,$total,$recDate,$FileName){
 	$mail_sent = mail("recepient@domain.com",$subject,$msg,$headers);
 	echo $mail_sent ? "Mail sent to recepient@domain.com" : "Mail failed";
 }
+
+function masterSlaveConfig(){
+	$systemStr = "php <scriptName>"; 
+	$output = "[$systemStr]".system( $systemStr, $stuff); 
+	$output .= "[$stuff]"; 
+	
+	if($stuff=="0"){
+		echo "Success";
+	}else{
+		echo "Failure";
+	}	
+}
+
 ?>
