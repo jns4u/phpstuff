@@ -37,6 +37,8 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | b
 
 NVM Usage:
 nvm ls
+
+chattr +a file
 nvm ls-remote
 nvm install v6.9.1
 nvm alias default v6.2.2
