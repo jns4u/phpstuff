@@ -20,6 +20,7 @@ mkhomedir_helper username
 
 find . -type f -size -1000k -exec rm {} +
 find -maxdepth 1 -name '{search_exprsn}'
+find . -maxdepth 1 -name "*.ext" -print0 | xargs -0 rm
 
 30 08 1-5 /home/yourfldr/yrscript
 00 * * * * cmd      
