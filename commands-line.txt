@@ -1,9 +1,6 @@
--------------------------------------
-यदा यदा हि धर्मस्य ग्लानिर्भवति भारत ।      
-अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम् ॥४-७॥  
-परित्राणाय साधूनां विनाशाय च दुष्कृताम् ।      
-धर्मसंस्थापनार्थाय सम्भवामि युगे युगे ॥४-८॥    
--------------------------------------
+sudo add-apt-repository ppa:ondrej/php
+sudo apt-get update
+sudo apt-get install php7.0 php5.6 php5.6-mysql php-gettext php5.6-mbstring php-mbstring php7.0-mbstring php-xdebug libapache2-mod-php5.6 libapache2-mod-php7.0
 
 grep -Po '^sudo.+:\K.*$' /etc/group
 sudo -i -u 'usr_nm'
