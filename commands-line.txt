@@ -1,3 +1,5 @@
+git remote -v
+git remote set-url origin <git-url>
 sudo add-apt-repository ppa:ondrej/php
 sudo apt-get update
 sudo apt-get install php7.0 php5.6 php5.6-mysql php-gettext php5.6-mbstring php-mbstring php7.0-mbstring php-xdebug libapache2-mod-php5.6 libapache2-mod-php7.0
